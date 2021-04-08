@@ -9,7 +9,7 @@ export default props => (
                 : false
             }
             {props.avancar ? 
-                <Button title='Avançar' onPress={()=> {props.navigation.navigate(props.avancar)}}/>
+                <Button title='Avançar' onPress={()=> {props.navigation.navigate(props.avancar, props.avancarParams)}}/>
                 : false
             }
         </View>
